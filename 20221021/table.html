@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>테이블</title>
+  <link rel="stylesheet" href="css/table.css">
+</head>
+<body>
+  <table>
+    <caption>title</caption>
+    <thead>
+      <tr>
+        <th>1행 1열</th>
+        <th>1행 2열</th>
+        <th>1행 3열</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2행 1열</td>
+        <td>2행 2열</td>
+        <td>2행 3열</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>3행 1열</td>
+        <td>3행 2열</td>
+        <td>3행 3열</td>
+      </tr>
+    </tfoot>
+  </table>
+  <hr>
+  <p>rowspan: 행 병합<br>colspan: 열 병합</p>
+  <table>
+    <tr>
+      <td rowspan="3">1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td colspan="2">8</td>
+    </tr>
+  </table>
+  <hr>
+  <table>
+    <caption>test</caption>
+    <colgroup>
+      <col style="background-color: aqua;" align="center">
+      <col style="background-color: blueviolet;">
+      <col span="2" style="background-color: brown;">
+      <col>
+    </colgroup>
+    <tr>
+      <td>tste</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>vsdvds</td>
+      <td></td>
+      <td colspan="2" rowspan="2"></td>
+    </tr>
+    <tr>
+      <td>vsvds</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="3"></td>
+    </tr>
+  </table>
+  <hr>
+  <table>
+    <caption>요안도라 객실</caption>
+    <thead>
+      <tr>
+        <th>방 이름</th>
+        <th>대상</th>
+        <th>크기</th>
+        <th>가격</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>유채방</td>
+        <td>여성 도미토리</td>
+        <td rowspan="3">4인실</td>
+        <td rowspan="4">1인 20,000원</td>
+      </tr>
+      <tr>
+        <td rowspan="2">동백방</td>
+        <td>동성 도미토리</td>
+      </tr>
+      <tr>
+        <td>가족 1팀</td>
+      </tr>
+      <tr>
+        <td>천혜향방</td>
+        <td>-</td>
+        <td>2인실</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4">바깥채 전체를 렌트합니다</td>
+      </tr>
+    </tfoot>
+  </table>
+  <hr>
+  <table>
+    <tr>
+      <td rowspan="2" colspan="2">1</td>
+    </tr>
+    <tr>
+    </tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+  <html lang="ko">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>나머지 태그</title>
+      <style>
+        textarea {
+          /* textarea 크기조절 방지 */
+          resize: none;
+        }
+      </style>
+    </head>
+    <body>
+      <form>
+        <textarea cols="20" rows="10"></textarea>
+        <hr>
+        <label for="item">상품선택</label>
+        <select id="item">
+          <option value="">선택</option>
+          <optgroup label="선물용">
+            <option value="p3">선물용 3kg</option>
+            <option selected value="p5">선물용 5kg</option>
+          </optgroup>
+          <optgroup label="가정용">
+            <option value="h3">가정용 3kg</option>
+            <option value="h5">가정용 5kg</option>
+          </optgroup>
+        </select>
+        <hr>
+        <input type="text" list="myList">
+        <datalist id="myList">
+          <option value="1">선물 포장</option>
+          <option value="2">포장 안 함</option>
+        </datalist>
+        <hr>
+        <input type="button" value="전송" />
+        <button><img src="/anchor/img/a.jpg" alt="호랑이">전송</button>
+      </form>
+    </body>
+</html>

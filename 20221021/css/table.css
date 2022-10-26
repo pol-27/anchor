@@ -1,0 +1,23 @@
+/* table > tbody > tr > th | td */
+/* 테이블은 tbody 자동 삽입되므로 선택할 때 주의해야 함 */
+
+/* table, table th, table td {
+
+} */
+
+table, table > thead > tr > th, table > tbody > tr > td, table > tfoot > tr > td {
+  border: 1px solid black; 
+  border-collapse: collapse;
+  padding: 5px 15px;
+}
+
+table > thead > tr {
+  background-color: red;
+}
+/* table > tbody > tr > td:first-child {
+  background-color: green;
+}*/
+
+colgroup > col:first-child {
+  background-color: crimson !important;
+}
