@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+  <html lang="ko">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>레이아웃 연습</title>
+      <style>
+        .parents {
+          border: 1px solid darkgoldenrod;
+          /* overflow: hidden; */
+        }
+        .parents::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        .box1 {
+          width: 100px;
+          height: 100px;
+          background-color: red;
+          border: 1px solid;
+          float: left;
+        }
+        .box2 {
+          width: 100px;
+          height: 100px;
+          background-color: green;
+          border: 1px solid;
+          float: left;
+        }
+        .box3 {
+          width: 200px;
+          height: 100px;
+          background-color: blue;
+          border: 1px solid;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="parents clearfix">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+      </div>
+      <div class="box3">3</div>
+    </body>
+</html>
